@@ -81,7 +81,33 @@ The system helps reduce manual work and errors by automating basic transaction o
 
 ---
 
-## 🧩 Screenshots or Code Snippets
+## 🧩 Code Snippets
 
-### 📝 Example HTML Form
+### 📝 students/index.blade.php
+``` php
+@foreach($students as $student)
+                <tr>
+                    <td>{{ $student->id }}</td>
+                    <td>{{ $student->first_name }} {{ $student->last_name }}</td>
+                    <td>
+                        <a href="{{ route('students.edit', $student->id) }}" class="btn btn-warning btn-sm">Edit</a>
+                        <form action="{{ route('students.destroy', $student->id) }}" method="POST" class="d-inline">
+                            @csrf
+                            @method('DELETE')
+                            <button type="submit" class="btn btn-danger btn-sm"
+                                onclick="return confirm('Are you sure you want to delete this student?');">
+                                Delete
+                            </button>
+                        </form>
+                    </td>
+                </tr>
+            @endforeach
 ```
+
+👩‍💻 Contributors
+Nicole Anne D. Saplan
+Rheachinefee T. Paneda 
+
+📄 License
+This project is developed for educational purposes only.
+You may modify and use the code for personal or academic learning projects.
