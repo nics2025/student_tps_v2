@@ -1,66 +1,87 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# 🧾 student_tps_v2
+## 📘 Description / Overview
+The *Student Transaction Processing System* is a simple web-based application designed to manage student-related transactions efficiently.  
+It allows users (students and administrators) to record, update, and view student information and transactions such as registration, payments, or other academic processes.  
+The system helps reduce manual work and errors by automating basic transaction operations.
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+---
 
-## About Laravel
+## 🎯 Objectives
+- To develop a functional web application that processes student transactions efficiently.  
+- To apply CRUD (Create, Read, Update, Delete) operations in a real-world context.  
+- To provide an easy-to-use interface for managing student records.  
+- To practice using *Laravel / PHP*, *MySQL*, and *HTML/CSS/JavaScript* in building a complete system.  
+- To demonstrate proper database connectivity and dynamic data manipulation.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+---
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## ⚙️ Features / Functionality
+### ✅ User Management
+- Add new student records  
+- Edit and update existing student details  
+- Delete unnecessary or duplicate records  
+- View all student transaction data  
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+### ✅ Transaction Module
+- Record student payments or other transactions  
+- Automatically calculate total or balance (if applicable)  
 
-## Learning Laravel
+### ✅ Dashboard
+- Displays student transaction summaries  
+- Shows quick statistics or student lists  
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+### ✅ Database Integration
+- Uses *MySQL* for storing and retrieving records securely  
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+---
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## 💻 Installation Instructions
+1. *Install Required Software:*
+   - [XAMPP](https://www.apachefriends.org/) (for PHP and MySQL)
+   - [Visual Studio Code](https://code.visualstudio.com/)
+   - [SQLyog](https://webyog.com/product/sqlyog/) or *phpMyAdmin* for database management
 
-## Laravel Sponsors
+2. *Clone or Download the Project Folder:*
+   - Place it in the htdocs directory of your XAMPP installation  
+     
+     C:\xampp\htdocs\student_tps
+     
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+3. *Set Up the Database:*
+   - Open *SQLyog* or *phpMyAdmin*
+   - Create a new database named student_tps_db
+   - Import the provided .sql file (if available) or manually create tables
 
-### Premium Partners
+4. *Configure the Connection:*
+   - Open your project folder  
+   - Edit config.php or .env file (for Laravel) to match your database credentials:
+     
+     DB_HOST=localhost
+     DB_USER=root
+     DB_PASS=
+     DB_NAME=student_tps_db
+     
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
+5. *Run the Project:*
+   - Start *Apache* and *MySQL* in XAMPP Control Panel  
+   - Open your browser and go to:  
+     
+     http://localhost/student_tps/
+     
 
-## Contributing
+---
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+## 🚀 Usage
+1. Open the system in your browser.  
+2. Navigate to the *Student Registration* page.  
+3. Fill in the required fields (e.g., name, student number, course, transaction details).  
+4. Click *Save* to store the data in the database.  
+5. Go to the *View Records* section to see all saved transactions.  
+6. Use *Edit* or *Delete* buttons to modify or remove records as needed.
 
-## Code of Conduct
+---
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+## 🧩 Screenshots or Code Snippets
 
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+### 📝 Example HTML Form
+```
